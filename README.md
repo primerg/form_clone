@@ -6,8 +6,9 @@ form_clone.js is a very simple and lightweight widget that allows you to clone a
 It can be extended and modified easily.
 Below is an example of the HTML structure and how to use it.
 
-# HTML form structure
+## HTML form structure
 
+<pre>
 <div id="unique-id">
 	<div class="clone-group">
 		<div class="clone-template">
@@ -17,9 +18,11 @@ Below is an example of the HTML structure and how to use it.
 	</div>
 	<div class="btn-clone"><a href="#">Add</a></div>
 </div>
+</pre>
 
-# How to Use
+## How to Use
 
+<pre>
 <script type="text/javascript">
 $('#unique-id').form_clone({
 	remBtnLabel: 'Remove',
@@ -28,3 +31,4 @@ $('#unique-id').form_clone({
 	}
 });
 </script>
+</pre>
