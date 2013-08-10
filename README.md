@@ -8,7 +8,7 @@ Below is an example of the HTML structure and how to use it.
 
 ## HTML form structure
 
-<pre>
+```html
 <div id="unique-id">
 	<div class="clone-group">
 		<div class="clone-template">
@@ -18,11 +18,11 @@ Below is an example of the HTML structure and how to use it.
 	</div>
 	<div class="btn-clone"><a href="#">Add</a></div>
 </div>
-</pre>
+```
 
 ## How to Use
 
-<pre>
+```js
 <script type="text/javascript">
 $('#unique-id').form_clone({
 	remBtnLabel: 'Remove',
@@ -31,4 +31,4 @@ $('#unique-id').form_clone({
 	}
 });
 </script>
-</pre>
+```
