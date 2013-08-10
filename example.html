@@ -1,0 +1,79 @@
+<html>
+<title>form_clone example</title>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="//codeorigin.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+<script type="text/javascript" src="form_clone.js"></script>
+<style type="text/css">
+body {
+	padding: 20px;
+}
+.clone-group > div {padding: 20px; margin-bottom: 20px; border-bottom: 1px solid #ccc;}
+label {width: 100px; display: block; float: left;}
+.form-item {padding: 5px;}
+
+.container-inline {overflow: hidden;}
+.container-inline select {float: left; margin-right: 10px;}
+.container-inline .form-item{padding: 0;}
+</style>
+<body>
+	<h1>Example - form_clone.js</h1>
+	<div id="members">
+		<div class="clone-group">
+			<div class="clone-template">
+				<div class="legal-name">
+					<div id="group-members-0-fname-wrapper" class="form-item">
+						<label for="group-members-0-fname" class="group-members-0-fname">First Name</label>
+	 					<input type="text" class="form-text" value="" size="60" id="group-members-0-fname" name="group_bio[members][0][fname]" maxlength="128">
+					</div>
+					<div id="group-members-0-lname-wrapper" class="form-item">
+	 					<label for="group-members-0-lname" class="group-members-0-lname">Last Name</label>
+	 					<input type="text" class="form-text" value="" size="60" id="group-members-0-lname" name="group_bio[members][0][lname]" maxlength="128">
+					</div>
+				</div>
+				<div id="group-members-0-bday-wrapper" class="form-item">
+	 				<label for="group-members-0-bday" class="group-members-0-bday">Date of Birth</label>
+	 				<div class="container-inline">
+	 					<div id="group-members-0-bday-month-wrapper" class="form-item">
+	 						<select id="group-members-0-bday-month" class="form-select" name="group_bio[members][0][bday][month]">
+	 							<option value="1">Jan</option>
+	 							<option value="2">Feb</option>
+	 							<option value="3">Mar</option>
+	 							<option value="4">Apr</option>
+	 							<option value="5">May</option>
+	 							<option value="6">Jun</option>
+	 							<option value="7">Jul</option>
+	 							<option value="8">Aug</option>
+	 							<option value="9">Sep</option>
+	 							<option value="10">Oct</option>
+	 							<option value="11">Nov</option>
+	 							<option value="12">Dec</option>
+	 						</select>
+						</div>
+						<div id="group-members-0-bday-day-wrapper" class="form-item">
+	 						<select id="group-members-0-bday-day" class="form-select" name="group_bio[members][0][bday][day]">
+	 							<option value="1">1</option>
+	 							<option value="2">2</option>
+	 							<option value="3">3</option>
+	 							<option value="4">4</option>
+	 							<option value="5">5</option>
+	 						</select>
+						</div>
+						<div id="group-members-0-bday-year-wrapper" class="form-item">
+	 						<select id="group-members-0-bday-year" class="form-select" name="group_bio[members][0][bday][year]">
+	 							<option value="2000">2000</option>
+	 							<option value="2001">2001</option>
+	 							<option value="2002">2002</option>
+	 							<option value="2003">2003</option>
+	 							<option value="2004">2004</option>
+	 						</select>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="btn-div"><a class="btn-clone" href="#">+ Add member</a></div>
+	</div>
+<script type="text/javascript">
+$('#members').form_clone();
+</script>
+</body>
